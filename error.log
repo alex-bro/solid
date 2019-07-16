@@ -1,0 +1,8 @@
+[Tue Jul 16 22:03:37.408470 2019] [php7:notice] [pid 26249] [client 127.0.0.1:52858] PHP ParseError:  syntax error, unexpected end of file in /home/alex/sites/solid.loc/bootstrap/app.php on line 4
+[Tue Jul 16 22:03:37.408510 2019] [php7:notice] [pid 26249] [client 127.0.0.1:52858] PHP Stack trace:
+[Tue Jul 16 22:03:37.408519 2019] [php7:notice] [pid 26249] [client 127.0.0.1:52858] PHP   1. {main}() /home/alex/sites/solid.loc/public/index.php:0
+[Tue Jul 16 22:03:37.408594 2019] [php7:notice] [pid 26249] [client 127.0.0.1:52858] PHP Parse error:  syntax error, unexpected end of file in /home/alex/sites/solid.loc/bootstrap/app.php on line 4
+[Tue Jul 16 22:03:43.765940 2019] [php7:notice] [pid 26252] [client 127.0.0.1:52860] PHP ParseError:  syntax error, unexpected end of file in /home/alex/sites/solid.loc/bootstrap/app.php on line 4
+[Tue Jul 16 22:03:43.766015 2019] [php7:notice] [pid 26252] [client 127.0.0.1:52860] PHP Stack trace:
+[Tue Jul 16 22:03:43.766037 2019] [php7:notice] [pid 26252] [client 127.0.0.1:52860] PHP   1. {main}() /home/alex/sites/solid.loc/public/index.php:0
+[Tue Jul 16 22:03:43.766162 2019] [php7:notice] [pid 26252] [client 127.0.0.1:52860] PHP Parse error:  syntax error, unexpected end of file in /home/alex/sites/solid.loc/bootstrap/app.php on line 4
