@@ -1,5 +1,53 @@
 [
     {
+        "name": "psr/cache",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/cache.git",
+            "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
+            "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-08-06T20:24:11+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Cache\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for caching libraries",
+        "keywords": [
+            "cache",
+            "psr",
+            "psr-6"
+        ]
+    },
+    {
         "name": "psr/container",
         "version": "1.0.0",
         "version_normalized": "1.0.0.0",
@@ -97,6 +145,146 @@
             "log",
             "psr",
             "psr-3"
+        ]
+    },
+    {
+        "name": "symfony/cache",
+        "version": "v4.3.2",
+        "version_normalized": "4.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/cache.git",
+            "reference": "4acf343c9e3aea5a00d51926c01125441707635c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/cache/zipball/4acf343c9e3aea5a00d51926c01125441707635c",
+            "reference": "4acf343c9e3aea5a00d51926c01125441707635c",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "psr/cache": "~1.0",
+            "psr/log": "~1.0",
+            "symfony/cache-contracts": "^1.1",
+            "symfony/service-contracts": "^1.1",
+            "symfony/var-exporter": "^4.2"
+        },
+        "conflict": {
+            "doctrine/dbal": "<2.5",
+            "symfony/dependency-injection": "<3.4",
+            "symfony/var-dumper": "<3.4"
+        },
+        "provide": {
+            "psr/cache-implementation": "1.0",
+            "psr/simple-cache-implementation": "1.0",
+            "symfony/cache-implementation": "1.0"
+        },
+        "require-dev": {
+            "cache/integration-tests": "dev-master",
+            "doctrine/cache": "~1.6",
+            "doctrine/dbal": "~2.5",
+            "predis/predis": "~1.1",
+            "psr/simple-cache": "^1.0",
+            "symfony/config": "~4.2",
+            "symfony/dependency-injection": "~3.4|~4.1",
+            "symfony/var-dumper": "^4.1.1"
+        },
+        "time": "2019-06-26T07:55:28+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Cache\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Cache component with PSR-6, PSR-16, and tags",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "caching",
+            "psr6"
+        ]
+    },
+    {
+        "name": "symfony/cache-contracts",
+        "version": "v1.1.5",
+        "version_normalized": "1.1.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/cache-contracts.git",
+            "reference": "ec5524b669744b5f1dc9c66d3c2b091eb7e7f0db"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/cache-contracts/zipball/ec5524b669744b5f1dc9c66d3c2b091eb7e7f0db",
+            "reference": "ec5524b669744b5f1dc9c66d3c2b091eb7e7f0db",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3",
+            "psr/cache": "^1.0"
+        },
+        "suggest": {
+            "symfony/cache-implementation": ""
+        },
+        "time": "2019-06-13T11:15:36+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Contracts\\Cache\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Generic abstractions related to caching",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "abstractions",
+            "contracts",
+            "decoupling",
+            "interfaces",
+            "interoperability",
+            "standards"
         ]
     },
     {
@@ -376,6 +564,65 @@
         "homepage": "https://symfony.com"
     },
     {
+        "name": "symfony/dotenv",
+        "version": "v4.3.2",
+        "version_normalized": "4.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/dotenv.git",
+            "reference": "c9ea2a1c60e7db08c1d1379cd4448fd14bda11eb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/dotenv/zipball/c9ea2a1c60e7db08c1d1379cd4448fd14bda11eb",
+            "reference": "c9ea2a1c60e7db08c1d1379cd4448fd14bda11eb",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3"
+        },
+        "require-dev": {
+            "symfony/process": "~3.4|~4.0"
+        },
+        "time": "2019-06-26T06:50:02+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Dotenv\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Registers environment variables from a .env file",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "dotenv",
+            "env",
+            "environment"
+        ]
+    },
+    {
         "name": "symfony/event-dispatcher",
         "version": "v4.3.2",
         "version_normalized": "4.3.2.0",
@@ -557,6 +804,181 @@
             }
         ],
         "description": "Symfony Filesystem Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/finder",
+        "version": "v4.3.2",
+        "version_normalized": "4.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/finder.git",
+            "reference": "33c21f7d5d3dc8a140c282854a7e13aeb5d0f91a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/finder/zipball/33c21f7d5d3dc8a140c282854a7e13aeb5d0f91a",
+            "reference": "33c21f7d5d3dc8a140c282854a7e13aeb5d0f91a",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3"
+        },
+        "time": "2019-06-13T11:03:18+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Finder\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Finder Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/framework-bundle",
+        "version": "v4.3.2",
+        "version_normalized": "4.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/framework-bundle.git",
+            "reference": "5aab516cef8e3772d6f7daa3ab62cd38713aae08"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/5aab516cef8e3772d6f7daa3ab62cd38713aae08",
+            "reference": "5aab516cef8e3772d6f7daa3ab62cd38713aae08",
+            "shasum": ""
+        },
+        "require": {
+            "ext-xml": "*",
+            "php": "^7.1.3",
+            "symfony/cache": "~4.3",
+            "symfony/config": "~4.2",
+            "symfony/dependency-injection": "^4.3",
+            "symfony/filesystem": "~3.4|~4.0",
+            "symfony/finder": "~3.4|~4.0",
+            "symfony/http-foundation": "^4.3",
+            "symfony/http-kernel": "^4.3",
+            "symfony/polyfill-mbstring": "~1.0",
+            "symfony/routing": "^4.3"
+        },
+        "conflict": {
+            "phpdocumentor/reflection-docblock": "<3.0",
+            "phpdocumentor/type-resolver": "<0.2.1",
+            "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0",
+            "symfony/asset": "<3.4",
+            "symfony/browser-kit": "<4.3",
+            "symfony/console": "<4.3",
+            "symfony/dom-crawler": "<4.3",
+            "symfony/dotenv": "<4.2",
+            "symfony/form": "<4.3",
+            "symfony/messenger": "<4.3",
+            "symfony/property-info": "<3.4",
+            "symfony/serializer": "<4.2",
+            "symfony/stopwatch": "<3.4",
+            "symfony/translation": "<4.3",
+            "symfony/twig-bridge": "<4.1.1",
+            "symfony/validator": "<4.1",
+            "symfony/workflow": "<4.3"
+        },
+        "require-dev": {
+            "doctrine/annotations": "~1.0",
+            "doctrine/cache": "~1.0",
+            "fig/link-util": "^1.0",
+            "phpdocumentor/reflection-docblock": "^3.0|^4.0",
+            "symfony/asset": "~3.4|~4.0",
+            "symfony/browser-kit": "^4.3",
+            "symfony/console": "^4.3",
+            "symfony/css-selector": "~3.4|~4.0",
+            "symfony/dom-crawler": "^4.3",
+            "symfony/expression-language": "~3.4|~4.0",
+            "symfony/form": "^4.3",
+            "symfony/http-client": "^4.3",
+            "symfony/lock": "~3.4|~4.0",
+            "symfony/mailer": "^4.3",
+            "symfony/messenger": "^4.3",
+            "symfony/mime": "^4.3",
+            "symfony/polyfill-intl-icu": "~1.0",
+            "symfony/process": "~3.4|~4.0",
+            "symfony/property-info": "~3.4|~4.0",
+            "symfony/security-csrf": "~3.4|~4.0",
+            "symfony/security-http": "~3.4|~4.0",
+            "symfony/serializer": "^4.3",
+            "symfony/stopwatch": "~3.4|~4.0",
+            "symfony/templating": "~3.4|~4.0",
+            "symfony/translation": "~4.3",
+            "symfony/twig-bundle": "~2.8|~3.2|~4.0",
+            "symfony/validator": "^4.1",
+            "symfony/var-dumper": "^4.3",
+            "symfony/web-link": "~3.4|~4.0",
+            "symfony/workflow": "^4.3",
+            "symfony/yaml": "~3.4|~4.0",
+            "twig/twig": "~1.34|~2.4"
+        },
+        "suggest": {
+            "ext-apcu": "For best performance of the system caches",
+            "symfony/console": "For using the console commands",
+            "symfony/form": "For using forms",
+            "symfony/property-info": "For using the property_info service",
+            "symfony/serializer": "For using the serializer service",
+            "symfony/validator": "For using validation",
+            "symfony/web-link": "For using web links, features such as preloading, prefetching or prerendering",
+            "symfony/yaml": "For using the debug:config and lint:yaml commands"
+        },
+        "time": "2019-06-26T06:50:02+00:00",
+        "type": "symfony-bundle",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Bundle\\FrameworkBundle\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony FrameworkBundle",
         "homepage": "https://symfony.com"
     },
     {
@@ -1396,6 +1818,68 @@
         "keywords": [
             "debug",
             "dump"
+        ]
+    },
+    {
+        "name": "symfony/var-exporter",
+        "version": "v4.3.2",
+        "version_normalized": "4.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/var-exporter.git",
+            "reference": "9dee83031dcf6dcb53bb7ec1c51de085329bf5cb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/var-exporter/zipball/9dee83031dcf6dcb53bb7ec1c51de085329bf5cb",
+            "reference": "9dee83031dcf6dcb53bb7ec1c51de085329bf5cb",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3"
+        },
+        "require-dev": {
+            "symfony/var-dumper": "^4.1.1"
+        },
+        "time": "2019-06-22T08:39:44+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\VarExporter\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "A blend of var_export() + serialize() to turn any serializable data structure to plain PHP code",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "clone",
+            "construct",
+            "export",
+            "hydrate",
+            "instantiate",
+            "serialize"
         ]
     },
     {
